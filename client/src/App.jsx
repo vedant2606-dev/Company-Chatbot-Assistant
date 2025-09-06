@@ -29,13 +29,16 @@ export default function App() {
     setInputValue("");
     setLoading(true);
 
-    const res = await fetch("http://localhost:3000/api/ask", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ question: currentInput }),
-    });
+    const res = await fetch(
+      "https://chatbot-assistant-byaf.onrender.com/api/ask",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ question: currentInput }),
+      }
+    );
     const data = await res.json();
     const ans = data.answer;
 
