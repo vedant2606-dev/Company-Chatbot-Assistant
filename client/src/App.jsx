@@ -53,7 +53,7 @@ export default function App() {
   return (
     <div className="flex flex-col h-screen items-center bg-slate-100">
       {/* Sticky Header */}
-      <div className="w-full bg-slate-600 text-white p-3 sm:p-4 shadow-md text-center rounded-b-lg">
+      <div className="sticky w-full bg-slate-600 text-white p-3 sm:p-4 shadow-md text-center rounded-b-lg">
         <h1 className="text-lg sm:text-xl font-bold">ChatBot Assistant</h1>
       </div>
 
