@@ -58,7 +58,7 @@ export default function App() {
       </div>
 
       {/* Main Chat Area */}
-      <div className="flex-1 w-full max-w-2xl p-3 sm:p-4 space-y-3 sm:space-y-4 overflow-y-auto">
+      <div className="flex-1 w-full max-w-2xl p-3 sm:p-4 space-y-3 sm:space-y-4 overflow-y-auto pt-16 sm:pt-4">
         {messages.length === 0 ? (
           <div className="text-center text-slate-500 mt-8 px-4">
             <p className="text-sm sm:text-base">
