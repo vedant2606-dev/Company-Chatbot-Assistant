@@ -1,13 +1,14 @@
 import { indexTheDocument } from "./prepare.js";
 import path from "path";
 
-const filepath = path.resolve(
+const filePath = path.resolve(
   process.cwd(),
+  "public",
   "Company_Internal_Documentation_Template.pdf"
 );
 
 try {
-  await indexTheDocument(filepath);
+  await indexTheDocument(filePath);
 } catch (error) {
   console.error("Error during indexing:", error);
   process.exit(1);
